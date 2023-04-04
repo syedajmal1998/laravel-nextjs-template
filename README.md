@@ -4,15 +4,26 @@
 
 See the [Original Frontend Part by @roketid](https://github.com/roketid/windmill-dashboard-nextjs-typescript) i just modified some staff
 
+#### Admin
+
+```
+User=admin@me.com
+Password=password
+Role=Super Admin
+
+```
 
 ## Installation
 
-``` bash
+```bash
 # clone the repo
 $ git clone https://github.com/syedajmal1998/laravel-nextjs-template <project-name>
 ```
+
 # Server Side
+
 ## Server Features
+
 - session based auth
 - role & permission based auth using [spatie-permission](https://spatie.be/docs/laravel-permission/v5/introduction)
 - Authentication Logging using [laravel-authentication-log](https://rappasoft.com/docs/laravel-authentication-log)
@@ -20,7 +31,7 @@ $ git clone https://github.com/syedajmal1998/laravel-nextjs-template <project-na
 
 ## Server Installation
 
-``` bash
+```bash
 # go into app's directory
 $ cd <project-name>/server
 
@@ -35,35 +46,37 @@ $ cp .env.example .env
 ### If you choice to use MySQL
 
 in file ".env" complete this database configuration:
-* DB_CONNECTION=mysql
-* DB_HOST=127.0.0.1
-* DB_PORT=3306
-* DB_DATABASE=laravel
-* DB_USERNAME=root
-* DB_PASSWORD=
+
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=laravel
+- DB_USERNAME=root
+- DB_PASSWORD=
 
 #### If you choice to use SQLite
 
-``` bash
+```bash
 # create database
 $ touch database/database.sqlite
 ```
+
 in file ".env" replace this database configuration:
-* DB_CONNECTION=mysql
-* DB_HOST=127.0.0.1
-* DB_PORT=3306
-* DB_DATABASE=laravel
-* DB_USERNAME=root
-* DB_PASSWORD=
+
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=laravel
+- DB_USERNAME=root
+- DB_PASSWORD=
 
 To this:
 
-* DB_CONNECTION=sqlite
-
+- DB_CONNECTION=sqlite
 
 ### Next step
 
-``` bash
+```bash
 # in your app directory
 # generate laravel APP_KEY
 $ php artisan key:generate
@@ -74,7 +87,7 @@ $ php artisan migrate:fresh --seed
 
 ## Usage
 
-``` bash
+```bash
 # start local server
 $ php artisan serve
 ```
@@ -87,6 +100,10 @@ $ php artisan serve
 
 # go into app's directory
 $ cd <project-name>/client
+
+# copy .env.example to .env
+$ cp .env.example .env
+
 # install dependencies
 npm install
 # or
@@ -100,6 +117,7 @@ npm run dev
 # or
 yarn dev
 ```
-> **_NOTE:_**  please make sure server is running.
+
+> **_NOTE:_** please make sure server is running.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
