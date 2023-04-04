@@ -83,8 +83,11 @@ $ php artisan serve
 
 ## Client Installation
 
-First, install dependencies :
 ```bash
+
+# go into app's directory
+$ cd <project-name>/client
+# install dependencies
 npm install
 # or
 yarn install
